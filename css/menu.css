@@ -55,6 +55,7 @@ html {
     max-width: 1920px;
     min-width: 428px;
     font-size: 62.5%;
+    width: 100%;
 }
 
 body {
@@ -84,17 +85,41 @@ h4 {
 
 p, a {
     font-size: 3rem;
+    color: white;
 }
 
 /* header section */
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/menu-header.jpg');
+    background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
+.baslik{
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.header_nav{
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_nav a{
+    color: white;
+    
+}
+
+
 
 /* spacer */
 .spacer {
@@ -118,7 +143,23 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    
 }
+
+.icerik {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.icerik_kisim {
+    display: block;
+    gap: 3rem
+    
+}
+
 
 /* footer section */
 footer {
@@ -126,27 +167,61 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+    color: white;
+}
+
+footer nav a {
+    padding-right: 3rem;
+}
+.flexfooter{
+    display:flex;
+    justify-content: space-around;
+    color: white;
+}
+.footertext{
+    color:white;
+}
+.copyright{
+    text-align: end;
+    font-size: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.button {
+    display: flex;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
+    
     .header-title {
         width: 75%;
         margin: 0 auto;
         text-align: center;
         font-size: 4rem;
     }
+    .header_nav{
+        flex-direction: column;
+        
+    }
+    
 
+    
+   
     /* menu */
     .menu {
         background-image: none;
+        height: auto;
     }
-
-    /* footer section */
     footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
     }
+
 }
