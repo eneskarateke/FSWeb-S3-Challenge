@@ -99,23 +99,34 @@ header {
 .baslik{
     background-color: rgba(0,0,0,.8);
     color: #fff;
-}
-.logo{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
+    text-align: center;
+    height: 27rem;
+
 }
 
-.header_nav{
-    text-align: center;
-    color: white;
+.menubar{
     display: flex;
     justify-content: space-evenly;
+}
+
+.header_nav a{
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 .header_nav a{
     color: white;
     
 }
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.fa-brands {    
+    font-size: 5rem; /* İkon boyutunu 32 piksel olarak ayarlayın */
+  }
+
 
 /* spacers */
 .spacer {
